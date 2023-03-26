@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Tienda';
+  public title : string = 'Tienda'; //Explicito
+  nombres = 'Francisco Jesús Molina Bovea'; //Implicito
+
+  constructor(){
+    this.nombres = 'Francisco';
+  }
+
+  public Actualizarnombre(){
+    this.nombres = "El propio Pacho Molina"
+  }
 }
